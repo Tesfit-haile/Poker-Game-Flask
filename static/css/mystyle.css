@@ -1,0 +1,181 @@
+body
+{
+  padding: 100px;
+}
+
+
+#poker_table
+{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the */
+  background-color:#2D8616;
+  background-image: radial-gradient(red,black);
+  height: 300px;
+  width: 600px;
+  margin: auto;
+  border-radius:100px;
+  padding: 50px;
+  border-style: solid;
+  border-width: 25px;
+  border-color: brown;
+  position:relative;
+}
+
+.card_poker_red,.card_poker_black
+{
+  color:black;
+  background-color:white;
+  height: 80px;
+  width: 50px;
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-grid;
+  border-color: black;
+}
+
+.card_poker_red
+{
+  color:red;
+}
+
+.card_symbol
+{
+  height: 60px;
+  width: 40px;
+  border-style: solid;
+  border-width: 1px;
+  margin: auto;
+  border-color: black;
+
+  word-wrap: break-word;
+  text-align: center;
+  font-size:12px;
+}
+
+.card_symbol img{
+    width: 100%;
+    height: 100%;
+}
+
+#card_area
+{
+  display: block;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 350px;
+  padding: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.empty_seat
+{
+    width:70px;
+    height:70px;
+    background-image: radial-gradient(brown,black);
+    border-radius:35px;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: solid;
+}
+
+#player_1, #player_2, #player_3, #player_4
+{
+    position:absolute;
+}
+
+
+#player_1
+{
+    top:-70px;
+    left:-70px;
+}
+
+#player_2
+{
+    top:-70px;
+    right:-70px;
+}
+
+#player_3
+{
+    bottom:-70px;
+    right:-70px;
+}
+
+#player_4
+{
+    bottom:-70px;
+    left:-70px;
+}
+
+.player_property
+{
+    background-color:#FFFFCC;
+    background-image: linear-gradient(#E0F4B3, #C5F753);
+    padding:5px;
+    margin:5px;
+    width:90px;
+    border-radius:15px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+
+#player_1 .face_avatar, #player_2 .face_avatar, #player_3 .face_avatar, #player_4 .face_avatar
+{
+    width:70px;
+    height:70px;
+}
+
+.player_form
+{
+    border-radius:30px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    background:#F9D957;
+    padding:10px;
+    margin:10px;
+    font-size:15px;
+}
+
+.avatar_form
+{
+    width:20px;
+    height:20px;
+}
+
+.form_container
+{
+    display:flex;
+    flex-direction:row;
+}
+
+.cards_hand
+{
+    position:relative;
+}
+
+.cards_hand .card_pos_1
+{
+    position:absolute;
+    left:0px;
+}
+
+.cards_hand .card_pos_2
+{
+    position:absolute;
+    left:30px;
+}
+
+.player_sub_container
+{
+    display:flex;
+    flex-direction:row;
+}
